@@ -14,11 +14,15 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     try {
-        return res.status(200).send("Welcome to BUYC Corp");
+        return res.status(200).send({
+            'message': 'Welcome to BUYC Corp'
+        });
     }
     catch (err) {
         console.log(err);
-        return res.status(500).send("Something went wrong");
+        return res.status(500).send({
+            'message': 'Something went wrong'
+        });
     }
 })
 

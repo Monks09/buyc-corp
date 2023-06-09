@@ -5,7 +5,6 @@ const inventorySchema = new mongoose.Schema(
         image: { type: String, required: true },
         title: { type: String, required: true },
         selling_price: { type: Number, required: true },
-        selling_price: { type: Number, required: true },
         odometer_value: { type: Number, required: true },
         major_scratches: { type: Number, required: true },
         original_paint: { type: String, required: true },
