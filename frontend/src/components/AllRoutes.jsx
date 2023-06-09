@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "../pages/Login";
 import Marketplace from "../pages/Marketplace";
 import PrivateRoute from "./PrivateRoute";
+import ListYourCar from "../pages/ListYourCar";
 
 function AllRoutes(props) {
   return (
@@ -13,6 +14,14 @@ function AllRoutes(props) {
         element={
           <PrivateRoute>
             <Marketplace />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/list-your-car"
+        element={
+          <PrivateRoute>
+            <ListYourCar />
           </PrivateRoute>
         }
       />
