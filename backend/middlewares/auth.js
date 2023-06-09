@@ -1,5 +1,5 @@
 const configs = require("../config/configs");
-const { verifyToken } = require("../controllers/user.controller");
+const { verifyToken } = require("../controllers/dealers.controller");
 
 
 function authMiddleware(req, res, next) {

@@ -1,4 +1,4 @@
-const Dealer = require("../models/dealer.model");
+const Dealer = require("../models/dealers.model");
 const jwt = require("jsonwebtoken");
 const configs = require("../config/configs");
 
